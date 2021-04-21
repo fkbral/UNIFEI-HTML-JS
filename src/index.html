@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas Tarefas</title>
+    <script defer src="script.js"></script>
+    <!-- <script src="fundamentos.js"></script> -->
+    <!-- <script src="condicao-ternaria.js"></script> -->
+    <style>
+      .done {
+        text-decoration: line-through;
+      }
+      #todo-list span + button::before {
+        content: "concluir";
+      }
+      #todo-list .done span + button::before {
+        content: "retornar para pendente";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Minhas tarefas</h1>
+    <form id="new-todo-form" action="">
+      <div>
+        <label for="new-todo">Nova tarefa</label>
+        <input id="new-todo" type="text" name="todo" />
+        <button>Adicionar novo item</button>
+      </div>
+    </form>
+
+    <h2>Lista de tarefas:</h2>
+
+    <ul id="todo-list">
+      <!-- 
+        Este será o formato de cada elemento inserido na lista:
+
+        <li>
+          <span>Aprender HTML</span>
+          <button>concluir</button>
+          <button>remover</button>
+        </li> 
+    --></ul>
+  </body>
+</html>
